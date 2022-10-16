@@ -1,0 +1,123 @@
+@import "../vendor.scss";
+.footer {
+  background-color: #1873af;
+  color: #fff;
+}
+.footer-wrapper {
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-items {
+  width: 33%;
+}
+.footer-logo {
+  padding: 4px;
+  color: #fff;
+}
+.footer-social__text {
+  margin: 20px 0;
+}
+.footer-social__icons {
+  display: flex;
+}
+.footer-social__icon:nth-child(2) {
+  margin-left: 10px;
+}
+.footer-social__icon {
+  &:hover {
+    cursor: pointer;
+  }
+  & > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.footer-items:nth-child(2) {
+  padding: 0 10px;
+}
+.footer-title {
+  padding-top: 0;
+  padding-bottom: 29px;
+  font-size: 22px;
+  width: fit-content;
+  color: #fff;
+  text-align: start;
+  &::after {
+    background-color: #fff;
+  }
+}
+.footer-content {
+  padding: 50px;
+}
+.footer-social__text {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.footer-li {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+#phone {
+  position: relative;
+  padding-left: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/svg/phone-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+#address {
+  position: relative;
+  padding-left: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/svg/map-location-dot-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+#email {
+  position: relative;
+  padding-left: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url(../../img/svg/envelope-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.footer-all-right {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+  }
+}

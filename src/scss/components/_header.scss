@@ -1,0 +1,237 @@
+@import "../vendor.scss";
+.header {
+  background-color: #fff;
+  height: 100%;
+  color: #fff;
+}
+.top-line {
+  position: absolute;
+  height: 140px;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    height: var(--size-sm);
+  }
+}
+.language {
+  color: #1c50de;
+}
+.top-line__top {
+  height: 70px;
+  border-bottom: 1px solid #abb8c3;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.top-line__top--fixed {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation-name: show_header;
+  animation-duration: 1s;
+}
+
+@keyframes show_header {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.top-line__bottom {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #abb8c3;
+}
+
+.top-line__item {
+  width: 33%;
+}
+.top-line__item--center {
+  display: flex;
+  justify-content: center;
+}
+.top-line__item--right {
+  display: flex;
+  justify-content: flex-end;
+}
+.button-feedback--header {
+  height: 45px;
+}
+
+.logo {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  color: #090909;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #0d093b;
+    text-decoration: none;
+  }
+  @include media-breakpoint-down(sm) {
+    flex: 1 0 0;
+  }
+  @include media-breakpoint-down(md) {
+    flex: 1 0 0;
+  }
+}
+.logo__img-wrapper {
+  width: 70px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-down(sm) {
+    height: var(--size-sm);
+    width: var(--size-sm);
+  }
+}
+.menu-button-container {
+  display: none;
+  flex: 0 0 200px;
+  text-align: right;
+  position: relative;
+  height: 70px;
+  @include media-breakpoint-down(sm) {
+    display: block;
+    height: var(--size-sm);
+  }
+  @include media-breakpoint-down(md) {
+    flex: 1 0 0;
+  }
+}
+.logo__text {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background-color: #013455;
+  transition: background 0.25s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__img {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/svg/bars-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    background-color: #d68924;
+  }
+  @include media-breakpoint-down(sm) {
+    height: var(--size-sm);
+    width: var(--size-sm);
+  }
+}
+.top-line__decoration {
+  flex: 1 0 0;
+  text-align: center;
+  &::before {
+    content: "";
+    height: 3px;
+    width: 50px;
+    background-color: #fff;
+    display: inline-block;
+    opacity: 0.4;
+    position: relative;
+    top: -4px;
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+@include media-breakpoint-down(md) {
+  .top-line__seperator,
+  .top-line__address {
+    display: none;
+  }
+}
+.top-line__contacts {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  color: rgba($color: #fff, $alpha: 0.7);
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.logo__img-text {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+.top-line__seperator {
+  width: 1px;
+  height: 30px;
+  background-color: rgba($color: #fff, $alpha: 0.4);
+  margin: 0 20px;
+}
+.top-line__numbers,
+.top-line__text {
+  margin-left: 7px;
+  a {
+    color: #d68924;
+  }
+}
+.top-line__numbers {
+  color: #d68924;
+}
+.top-line__text {
+  color: #1c50de;
+}
+
+.top-line__menu {
+  display: flex;
+}
+.menu-item__link {
+  color: #1c50de;
+  text-decoration: none;
+  letter-spacing: 1px;
+  word-spacing: 0px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  &:focus,
+  &:hover {
+    color: #d68924;
+  }
+}
