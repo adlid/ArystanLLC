@@ -38,7 +38,10 @@
         </a>
       </div>
       <div class="top-line__item top-line__item--right">
-        <button class="button button-feedback button-feedback--header">
+        <button
+
+        data-graph-path="modal"
+        class="button button-feedback btn-reset  button-feedback--header">
           Связаться
         </button>
       </div>
@@ -59,11 +62,11 @@
           <div class="full-page-green"></div>
           <div class="ham-menu">
             <ul class="centre-text bold-text">
-              <li> <a href="#top-page"> Главная </a> </li>
-              <li > <a href="#"> О нас </a></li>
-              <li> <a href="#"> Наши услуги </a></li>
-              <li> <a href="#"> Наши работы </a></li>
-              <li> <a href="#"> Контакты </a></li>
+              <li> <a data-scroll href="#top-page"> Главная </a> </li>
+              <li > <a data-scroll href="#about"> О нас </a></li>
+              <li> <a data-scroll href="#work"> Наши услуги </a></li>
+              <li> <a data-scroll href="#deal"> Наши работы </a></li>
+              <li> <a data-scroll href="#footer"> Контакты </a></li>
             </ul>
           </div>
         </div>
@@ -73,22 +76,27 @@
 
       <ul class="top-line__menu">
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#">
               Главная
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#about">
+            О нас
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll class="menu-item__link" href="#work">
             Наши услуги
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#deal">
             Наши работы
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#footer">
             Контакты
           </a>
         </li>
@@ -112,14 +120,46 @@
               Ежегодно мы выполняем 60 проектов для наших
               клиентов и партнеров в Казахстане.
             </div>
-            <button class="button button-feedback ">
-                 Подробнее
-            </button>
+
+            <button
+            class="button button-feedback  btn-reset "
+            data-graph-path="modal">
+            Подробнее
+          </button>
+
           </div>
         </div>
       </div>
 
-      <section class="about">
+      <div class="graph-modal">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+          <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+          <div class="graph-modal__content">
+
+            <form>
+              <div class="feedback-modal">
+                <div class="feedback-modal__content">
+                  <div class="feedback-modal__body">
+                    <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
+                    <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+                    <div class="feedback-modal__form">
+                      <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+                      <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+                    </div>
+                    <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+                  </div>
+                </div>
+                <div class="feedback-modal__img">
+                  <img  src="./img/question.jpg"/>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <section id="about" class="about">
         <div class="container">
           <div class="about_wrapper">
             <h2 class="title title--bl">
@@ -172,7 +212,7 @@
         </div>
       </section>
 
-      <section class="work">
+      <section id="work" class="work">
   <div class="container">
     <div class="work_wrapper">
 
@@ -185,7 +225,7 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
       <div class="work-content">
         <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000" data-aos-offset="200" class="work-items">
           <div class="work-icon">
-            <img src="../img/finance.png">
+            <img src="../img/stats.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
@@ -194,9 +234,9 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
 
           </div>
         </div>
-        <div data-aos="zoom-in"  data-aos-delay="100"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200"class="work-items">
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200"class="work-items">
           <div class="work-icon">
-            <img src="../img/digital.png">
+            <img src="../img/coding.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
@@ -205,20 +245,20 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
 
           </div>
         </div>
-        <div data-aos="zoom-in"  data-aos-delay="150"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
           <div class="work-icon">
-            <img src="../img/sham.png">
+            <img src="../img/social-media.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
-              Маркетинг
+              Маркетинг (продвижение в соц сетях)
             </h4>
 
           </div>
         </div>
-        <div data-aos="zoom-in"  data-aos-delay="150"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
           <div class="work-icon">
-            <img src="../img/sham.png">
+            <img src="../img/accounting.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
@@ -227,24 +267,34 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
 
           </div>
         </div>
-        <div data-aos="zoom-in"  data-aos-delay="150"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
           <div class="work-icon">
-            <img src="../img/sham.png">
+            <img src="../img/handshake.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
-              Маркетинг
+              Разработка бизнес-планов и фин моделей для инвестиционных и бизнес-проектов
             </h4>
 
           </div>
         </div>
-        <div data-aos="zoom-in"  data-aos-delay="150"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
           <div class="work-icon">
-            <img src="../img/sham.png">
+            <img src="../img/branding.png">
           </div>
           <div class="work-info">
             <h4 class="work-icon__title">
-              Маркетинг
+              Брендинг для малого бизнеса (логотип, фирменный стиль, айдентика)
+            </h4>
+          </div>
+        </div>
+        <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000"  data-aos-offset="200" class="work-items">
+          <div class="work-icon">
+            <img src="../img/video-camera.png">
+          </div>
+          <div class="work-info">
+            <h4 class="work-icon__title">
+              Video production (Съемка рекламного видеоролика)
             </h4>
           </div>
         </div>
@@ -263,36 +313,29 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
       <div class="numbers-content">
         <div class="numbers-item">
           <div class="numbers-item__title">
-            10 Лет
+             Более 1 года
           </div>
           <div class="numbers-text">
-            Гарантия на материалы
+            Гарантия на уникальность
           </div>
         </div>
         <div class="numbers-item">
           <div class="numbers-item__title">
-            2500+
+            10+
           </div>
           <div class="numbers-text">
-            Заказ Выполнен
+             Успешных консультаций
           </div>
         </div>
         <div class="numbers-item">
           <div class="numbers-item__title">
-            50+
+            10+
           </div>
           <div class="numbers-text">
             Член команды
           </div>
         </div>
-        <div class="numbers-item">
-          <div class="numbers-item__title">
-            20 Дней
-          </div>
-          <div class="numbers-text">
-            Доставка
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -320,8 +363,134 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
       </div>
 
     </main>
+    <section class="feedback">
+    <div class="container">
+    <div class="feedback-modal feedback-modal--section">
 
-    <footer class="footer">
+      <div class="feedback-modal__content">
+        <div class="feedback-modal__body feedback-modal__body--sec">
+          <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
+          <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+          <div class="feedback-modal__form">
+            <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+            <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+          </div>
+          <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+        </div>
+      </div>
+      <div class="feedback-modal__img feedback-modal__img--sec">
+        <img  src="./img/question.jpg"/>
+      </div>
+    </div>
+  </div></section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <section id="deal" class="deal">
+    <div class="container">
+      <div class="deal-wrapper">
+        <h2 class="title deal-title">
+          Наши <span>Работы</span>
+        </h2>
+        <div class="deal-content">
+
+          <div class="deal-slider">
+            <div class="deal-slider__wrapper swiper-wrapper">
+              <div class="deal-slider__slide swiper-slide">
+                <div class="slider-content__order"> <span> 01 </span> </div>
+                <figure class="effect-dexter">
+
+                  <img
+                    src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
+                    alt="img12"
+                  />
+
+                  <figcaption>
+                    <h2>Strange
+                      <span>Dexter</span>
+                    </h2>
+                    <p>
+                      Dexter had his own strange way.
+                      You could watch him training ants.
+                    </p>
+                    <a href="#">
+                      View more
+                    </a>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="deal-slider__slide swiper-slide">
+                <div class="slider-content__order"> <span> 02 </span> </div>
+                <figure class="effect-dexter">
+
+                  <img
+                    src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
+                    alt="img12"
+                  />
+
+                  <figcaption>
+                    <h2> Strange
+                      <span> Dexter </span>
+                    </h2>
+                    <p>
+                      Dexter had his own strange way.
+                      You could watch him training ants.
+                    </p>
+                    <a
+                      href="#">
+                      View more
+                    </a>
+
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="deal-slider__slide swiper-slide">
+                <div class="slider-content__order"> <span> 03 </span> </div>
+                <figure class="effect-dexter">
+
+                  <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
+
+                  <figcaption>
+                    <h2>Strange <span>Dexter</span></h2>
+                    <p>Dexter had his own strange way. You could watch him training ants.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+
+                </figure>
+              </div>
+              <div class="deal-slider__slide swiper-slide">
+                <div class="slider-content__order"> <span> 04 </span> </div>
+                <figure class="effect-dexter">
+
+                  <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
+
+                  <figcaption>
+                    <h2>Strange <span>Dexter</span></h2>
+                    <p>Dexter had his own strange way. You could watch him training ants.</p>
+                    <a href="#">View more</a>
+                  </figcaption>
+
+                </figure>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+    <footer id="footer" class="footer">
   <div class="container">
 
     <div class="footer-wrapper">

@@ -17,7 +17,10 @@
         </a>
       </div>
       <div class="top-line__item top-line__item--right">
-        <button class="button button-feedback button-feedback--header">
+        <button
+
+        data-graph-path="modal"
+        class="button button-feedback btn-reset  button-feedback--header">
           Связаться
         </button>
       </div>
@@ -43,11 +46,11 @@
           <div class="full-page-green"></div>
           <div class="ham-menu">
             <ul class="centre-text bold-text">
-              <li> <a href="#top-page"> Главная </a> </li>
-              <li > <a href="#"> О нас </a></li>
-              <li> <a href="#"> Наши услуги </a></li>
-              <li> <a href="#"> Наши работы </a></li>
-              <li> <a href="#"> Контакты </a></li>
+              <li> <a data-scroll href="#top-page"> Главная </a> </li>
+              <li > <a data-scroll href="#about"> О нас </a></li>
+              <li> <a data-scroll href="#work"> Наши услуги </a></li>
+              <li> <a data-scroll href="#deal"> Наши работы </a></li>
+              <li> <a data-scroll href="#footer"> Контакты </a></li>
             </ul>
           </div>
         </div>
@@ -57,22 +60,27 @@
 
       <ul class="top-line__menu">
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#">
               Главная
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#about">
+            О нас
+          </a>
+        </li>
+        <li class="menu-item">
+          <a data-scroll class="menu-item__link" href="#work">
             Наши услуги
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#deal">
             Наши работы
           </a>
         </li>
         <li class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a data-scroll class="menu-item__link" href="#footer">
             Контакты
           </a>
         </li>

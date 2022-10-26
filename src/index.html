@@ -20,17 +20,48 @@
               Ежегодно мы выполняем 60 проектов для наших
               клиентов и партнеров в Казахстане.
             </div>
-            <button class="button button-feedback ">
-                 Подробнее
-            </button>
+
+            <button
+            class="button button-feedback  btn-reset "
+            data-graph-path="modal">
+            Подробнее
+          </button>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="graph-modal">
+        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+          <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+          <div class="graph-modal__content">
+
+            <form>
+              <div class="feedback-modal">
+                <div class="feedback-modal__content">
+                  <div class="feedback-modal__body">
+                    <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
+                    <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+                    <div class="feedback-modal__form">
+                      <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+                      <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+                    </div>
+                    <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+                  </div>
+                </div>
+                <div class="feedback-modal__img">
+                  <img  src="./img/question.jpg"/>
+                </div>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
 
 
 
-
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about_wrapper">
             <h2 class="title title--bl">
@@ -108,7 +139,27 @@
       </div>
 
     </main>
+    <section class="feedback">
+    <div class="container">
+    <div class="feedback-modal feedback-modal--section">
 
+      <div class="feedback-modal__content">
+        <div class="feedback-modal__body feedback-modal__body--sec">
+          <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
+          <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+          <div class="feedback-modal__form">
+            <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+            <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+          </div>
+          <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+        </div>
+      </div>
+      <div class="feedback-modal__img feedback-modal__img--sec">
+        <img  src="./img/question.jpg"/>
+      </div>
+    </div>
+  </div></section>
+    @include('partials/ourDeal.html')
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
   </div>
