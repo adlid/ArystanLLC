@@ -9,7 +9,7 @@
 .footer-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .footer-items {
   width: 33%;
@@ -17,6 +17,9 @@
 .footer-logo {
   padding: 4px;
   color: #fff;
+  &:hover {
+    color: #fff;
+  }
 }
 .footer-social__text {
   margin: 20px 0;
@@ -28,6 +31,9 @@
   margin-left: 10px;
 }
 .footer-social__icon {
+
+}
+.social-icon__link{
   &:hover {
     cursor: pointer;
   }
@@ -119,5 +125,12 @@
     top: 0;
     left: 0;
     background-color: #fff;
+  }
+}
+.a-reset {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
   }
 }

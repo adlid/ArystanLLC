@@ -15,14 +15,14 @@
           </div>
 
           <div class="top-page__content">
-            <div class="top-page__text">
-              Команда <span class="text--orange"> профессионалов</span> в сфере консалтинговых услуг.
-              Ежегодно мы выполняем 60 проектов для наших
-              клиентов и партнеров в Казахстане.
+            <div class="top-page__text ">
+             <span class="lng-top-page__text-1"> Команда </span>  <span class="text--orange lng-text--orange"> профессионалов</span> <span class="lng-top-page__text">в сфере консалтинговых услуг.
+                Ежегодно мы выполняем 60 проектов для наших
+                клиентов и партнеров в по всему миру. </span>
             </div>
 
             <button
-            class="button button-feedback  btn-reset "
+            class="button button-feedback lng-button-feedback btn-reset "
             data-graph-path="modal">
             Подробнее
           </button>
@@ -40,13 +40,18 @@
               <div class="feedback-modal">
                 <div class="feedback-modal__content">
                   <div class="feedback-modal__body">
-                    <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
-                    <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+                    <div class="feedback-modal__title lng-feedback-modal__title">Есть дополнительные вопросы?</div>
+                    <div class="feedback-modal__text lng-feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
                     <div class="feedback-modal__form">
-                      <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-                      <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+                      <input  name="lng-name" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+                      <input  name="lng-tel" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
                     </div>
-                    <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+                    <button
+                      class="button feedback-modal__input
+                      feedback-modal__input--btn lng-send"
+                      >
+                      Отправить
+                      </button>
                   </div>
                 </div>
                 <div class="feedback-modal__img">
@@ -66,26 +71,23 @@
           <div class="about_wrapper">
             <h2 class="title title--bl">
 
-              Группа компаний  <span class="title--color">  ARYSTAN LLC </span>
+             <span class="lng-about__title"> Группа компаний </span>    <span class="yellow title--color">  ARYSTAN LLC </span>
 
             </h2>
             <div class="about__content">
               <div class="about_content__block">
 
-                <h4  class="about_content__title--sm">
-                    <span>
+                <!-- <h4  class="about_content__title--sm lng-about_content__title">
+                    <span >
                       Более 10 лет опыта работы в сфере консалтинга
                     </span>
-                </h4>
-                <div class="about_content__text">
-                    <span> ARYSTAN LLC </span> – это скорость, качество и гарантия результата.
-                    Команда профессионалов в сфере консалтинговых услуг.
-                    Ежегодно мы выполняем 60 проектов для наших клиентов и
-                    партнеров в Казахстане. За 20 лет успешной работы мы создали
-                    крупнейшую базу отраслевых специалистов, которые помогают разрабатывать
-                     ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем
-                    только актуальную рыночную информацию и применяем современные инструменты для работы
-                    с ней.  Именно мы5 лет назад разработали ТЭО для первой индустриальной зоны в Казахстане - СПК Астана.
+                </h4> -->
+                <div class="about_content__text lng-about_content__text">
+
+
+                      ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.
+
+
                   <br>
                 </div>
               </div>
@@ -93,35 +95,18 @@
                 <img src="./img/8294.jpg"/>
               </div>
             </div>
-            <!-- <ul class="about_list">
 
-                <li class="about_list__item">Гарантия на материалы 4 года.</li>
-                <li class="about_list__item">Было завершено более 1000 проектов.</li>
-                <li class="about_list__item">Доступно более 499 профессионалов.</li>
-
-
-                <li class="about_list__item">Более 15 наград.</li>
-                <li class="about_list__item">Доступно более чем в 10 странах.</li>
-                <li class="about_list__item">Логистика без границ.</li>
-
-
-                <li class="about_list__item">Порт мирового класса.  </li>
-                <li class="about_list__item">Бесконечные возможности.</li>
-                <li class="about_list__item">Доставленное счастье.</li>
-
-            </ul> -->
           </div>
         </div>
       </section>
-      <!-- @include('partials/service.html') -->
-      <!-- @include('partials/about.html') -->
+
       @include('partials/work.html')
       @include('partials/numbers.html')
-      <div class="modal micromodal-slide graph-modal ">
+      <!-- <div class="modal micromodal-slide graph-modal ">
         <div class="modal_container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-request">
           <button class="modal-close btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
           <div class="modal-wrapper graph-modal__content">
-           <h2 class="modal-title">Оставить заявку </h2>
+           <h2 class="modal-title lng-modal-title">Оставить заявку </h2>
            <form action="#">
               <main class="modal-content">
                 <input class="form-input modal__input" type=""placeholder="Ваше имя..."  name="vh-name">
@@ -131,12 +116,12 @@
                 </textarea>
               </main>
               <footer class="modal__footer">
-                <button class="button"> <span>Отправить заявку</span> </button>
+                <button class="button lng-button"> <span>Отправить заявку</span> </button>
               </footer>
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </main>
     <section class="feedback">
@@ -145,13 +130,19 @@
 
       <div class="feedback-modal__content">
         <div class="feedback-modal__body feedback-modal__body--sec">
-          <div class="feedback-modal__title">Есть дополнительные вопросы?</div>
-          <div class="feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+          <div class="feedback-modal__title lng-feedback-sec__title">Есть дополнительные вопросы?</div>
+          <div class="feedback-modal__text lng-feedback-sec__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
           <div class="feedback-modal__form">
-            <input placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-            <input placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+            <input name="lng-name-1" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+            <input name="lng-tel-1" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
           </div>
-          <input placeholder="Отправить" class="button feedback-modal__input feedback-modal__input--btn " type="submit"/>
+          <button
+          class="button feedback-modal__input
+          feedback-modal__input--btn lng-send-1"
+          >
+          Отправить
+          </button>
+
         </div>
       </div>
       <div class="feedback-modal__img feedback-modal__img--sec">

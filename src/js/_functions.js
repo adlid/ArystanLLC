@@ -166,14 +166,7 @@ AOS.init();
 //
 // });
 // Подключение параллакса блоков при скролле
-import Rellax from 'rellax';
-const rellax = new Rellax('.',
-{
-  speed: -2,
-  center: true,
-  round: true,
-}
-);
+
 
 // Подключение плавной прокрутки к якорям
 import SmoothScroll from 'smooth-scroll';
