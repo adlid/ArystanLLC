@@ -31,10 +31,10 @@
   justify-content: center;
 }
 .numbers-title {
-  color: #fff;
-  & span {
-    color: var(--site-orange-color);
-  }
+  color: #fff !important;
+}
+.normal {
+  color: #fff !important;
 }
 .numbers-item__title {
   font-size: 40px;
