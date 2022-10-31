@@ -49,7 +49,7 @@
   }
   @include media-breakpoint-down(sm) {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .about_list {
@@ -218,7 +218,8 @@
 }
 .title--bl {
   position: relative;
-  z-index: -1;
+  z-index: -4;
+
   &::before {
     content: "";
     position: absolute;
@@ -230,6 +231,27 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;
-    z-index: -4;
+    z-index: -1;
   }
+  @include media-breakpoint-down(md) {
+    &:before{
+      content: none;
+    }
+    z-index: 0;
+  }
+  &:after{
+    background-color: #f4bd33;
+  }
+}
+.title--bl span{
+  color: #1a7b9f!important;
+  @include media-breakpoint-down(md) {
+    font-size: 25px;
+  }
+
+}
+.lng-about__title{
+
+
+
 }

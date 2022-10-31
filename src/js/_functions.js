@@ -132,7 +132,22 @@ import { gsap,Power2 } from "gsap";
 new Swiper('.deal-slider', {
   speed: 400,
   spaceBetween: 20,
-  slidesPerView:3
+  slidesPerView:3,
+  breakpoints:{
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    700: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+  }
 });
 
 
@@ -166,7 +181,14 @@ AOS.init();
 //
 // });
 // Подключение параллакса блоков при скролле
-
+// import Rellax from 'rellax';
+// const rellax = new Rellax('.',
+// {
+//   speed: -2,
+//   center: true,
+//   round: true,
+// }
+// );
 
 // Подключение плавной прокрутки к якорям
 import SmoothScroll from 'smooth-scroll';

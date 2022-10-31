@@ -4,12 +4,15 @@
   padding-bottom: 70px;
   position: relative;
   margin-bottom: 200px;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   &::after {
     content: "";
     background: url(../../img/Diffpeop.jpg);
 
     position: absolute;
-    bottom: -200px;
+    bottom: -226px;
     left: 0;
     width: 100%;
     background-position: inherit;
@@ -21,6 +24,7 @@
 .numbers-content {
   display: flex;
   justify-content: center;
+
 }
 .numbers-item {
   max-width: 25%;

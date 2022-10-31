@@ -8,6 +8,14 @@
 }
 .graph-modal__content {
   padding: 80px 10px;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}
+.graph-modal__container{
+  @include media-breakpoint-down(md) {
+    width: auto;
+  }
 }
 .feedback-modal__body {
   display: block;
@@ -36,6 +44,11 @@
 }
 .feedback-modal__img {
   width: 300px;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }@include media-breakpoint-down(md) {
+     flex-direction: column;
+   }
 }
 .feedback-modal__input--btn {
   width: 100% !important;
@@ -43,13 +56,25 @@
 .feedback-modal--section {
   width: 100%;
   justify-content: space-evenly;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
 }
 .feedback {
-  padding: 80px 0;
+  padding: 0;
+  @include media-breakpoint-down(md) {
+   padding: 10px;
+  }
 }
 .feedback-modal__body--sec {
   width: 500px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
 }
 .feedback-modal__img--sec {
   width: 600px;
+  @include media-breakpoint-down(md) {
+   display: none;
+  }
 }

@@ -4,156 +4,157 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  <div class="site-container">
-    @include('partials/header.html')
+<div class="site-container">
+  @include('partials/header.html')
 
-    <main class="main">
-      <div class="top-page" id="top-page">
-        <div class="top-page__container">
-          <div class="top-page__bg-wrapper">
-            <img class="top-page__bg" src="./img/consultation-bg.png"/>
-          </div>
+  <main class="main">
+    <div class="top-page" id="top-page">
+      <div class="top-page__container">
+        <div class="top-page__bg-wrapper">
+          <img class="top-page__bg" src="./img/consultation-bg.png"/>
+        </div>
 
-          <div class="top-page__content">
-            <div class="top-page__text ">
-             <span class="lng-top-page__text-1"> Команда </span>  <span class="text--orange lng-text--orange"> профессионалов</span> <span class="lng-top-page__text">в сфере консалтинговых услуг.
+        <div class="top-page__content">
+          <div class="top-page__text ">
+            <span class="lng-top-page__text-1"> Команда </span>  <span class="text--orange lng-text--orange"> профессионалов</span> <span class="lng-top-page__text">в сфере консалтинговых услуг.
                 Ежегодно мы выполняем 60 проектов для наших
                 клиентов и партнеров в по всему миру. </span>
-            </div>
+          </div>
 
-            <button
+          <button
             class="button button-feedback lng-button-feedback btn-reset "
             data-graph-path="modal">
             Подробнее
           </button>
 
-          </div>
         </div>
-      </div>
-
-      <div class="graph-modal">
-        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
-          <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
-          <div class="graph-modal__content">
-
-            <form>
-              <div class="feedback-modal">
-                <div class="feedback-modal__content">
-                  <div class="feedback-modal__body">
-                    <div class="feedback-modal__title lng-feedback-modal__title">Есть дополнительные вопросы?</div>
-                    <div class="feedback-modal__text lng-feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
-                    <div class="feedback-modal__form">
-                      <input  name="lng-name" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-                      <input  name="lng-tel" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
-                    </div>
-                    <button
-                      class="button feedback-modal__input
-                      feedback-modal__input--btn lng-send"
-                      >
-                      Отправить
-                      </button>
-                  </div>
-                </div>
-                <div class="feedback-modal__img">
-                  <img  src="./img/question.jpg"/>
-                </div>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-
-
-
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about_wrapper">
-            <h2 class="title title--bl">
-
-             <span class="lng-about__title"> Группа компаний </span>    <span class="yellow title--color">  ARYSTAN LLC </span>
-
-            </h2>
-            <div class="about__content">
-              <div class="about_content__block">
-
-                <!-- <h4  class="about_content__title--sm lng-about_content__title">
-                    <span >
-                      Более 10 лет опыта работы в сфере консалтинга
-                    </span>
-                </h4> -->
-                <div class="about_content__text lng-about_content__text">
-
-
-                      ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.
-
-
-                  <br>
-                </div>
-              </div>
-              <div class="about_content__img">
-                <img src="./img/8294.jpg"/>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      @include('partials/work.html')
-      @include('partials/numbers.html')
-      <!-- <div class="modal micromodal-slide graph-modal ">
-        <div class="modal_container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-request">
-          <button class="modal-close btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
-          <div class="modal-wrapper graph-modal__content">
-           <h2 class="modal-title lng-modal-title">Оставить заявку </h2>
-           <form action="#">
-              <main class="modal-content">
-                <input class="form-input modal__input" type=""placeholder="Ваше имя..."  name="vh-name">
-                <input class="form-input modal__input" type=""placeholder="Ваше телефон..."  name="vh-name">
-                <textarea class="form-input modal__input" name="message" placeholder="Сообщение...">
-
-                </textarea>
-              </main>
-              <footer class="modal__footer">
-                <button class="button lng-button"> <span>Отправить заявку</span> </button>
-              </footer>
-            </form>
-          </div>
-        </div>
-      </div> -->
-
-    </main>
-    <section class="feedback">
-    <div class="container">
-    <div class="feedback-modal feedback-modal--section">
-
-      <div class="feedback-modal__content">
-        <div class="feedback-modal__body feedback-modal__body--sec">
-          <div class="feedback-modal__title lng-feedback-sec__title">Есть дополнительные вопросы?</div>
-          <div class="feedback-modal__text lng-feedback-sec__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
-          <div class="feedback-modal__form">
-            <input name="lng-name-1" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-            <input name="lng-tel-1" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
-          </div>
-          <button
-          class="button feedback-modal__input
-          feedback-modal__input--btn lng-send-1"
-          >
-          Отправить
-          </button>
-
-        </div>
-      </div>
-      <div class="feedback-modal__img feedback-modal__img--sec">
-        <img  src="./img/question.jpg"/>
       </div>
     </div>
-  </div></section>
-    @include('partials/ourDeal.html')
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример include -->
-  </div>
+
+    <div class="graph-modal">
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+        <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+
+          <form action="./resources/mail.php">
+            <div class="feedback-modal">
+              <div class="feedback-modal__content">
+                <div class="feedback-modal__body">
+                  <div class="feedback-modal__title lng-feedback-modal__title">Есть дополнительные вопросы?</div>
+                  <div class="feedback-modal__text lng-feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+                  <div class="feedback-modal__form">
+                    <input  name="lng-name" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+                    <input  name="lng-tel" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+                  </div>
+                  <button
+                    class="button feedback-modal__input
+                      feedback-modal__input--btn lng-send"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </div>
+              <div class="feedback-modal__img">
+                <img  src="./img/question.jpg"/>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about_wrapper">
+          <h2 class="title title--bl">
+
+            <span class="lng-about__title"> Группа компаний </span>    <span class="yellow title--color">  ARYSTAN LLC </span>
+
+          </h2>
+          <div class="about__content">
+            <div class="about_content__block">
+
+              <!-- <h4  class="about_content__title--sm lng-about_content__title">
+                  <span >
+                    Более 10 лет опыта работы в сфере консалтинга
+                  </span>
+              </h4> -->
+              <div class="about_content__text lng-about_content__text">
+
+
+                ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.
+
+
+                <br>
+              </div>
+            </div>
+            <div class="about_content__img">
+              <img src="./img/8294.jpg"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    @include('partials/work.html')
+    @include('partials/numbers.html')
+    <!-- <div class="modal micromodal-slide graph-modal ">
+      <div class="modal_container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-request">
+        <button class="modal-close btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="modal-wrapper graph-modal__content">
+         <h2 class="modal-title lng-modal-title">Оставить заявку </h2>
+         <form action="#">
+            <main class="modal-content">
+              <input class="form-input modal__input" type=""placeholder="Ваше имя..."  name="vh-name">
+              <input class="form-input modal__input" type=""placeholder="Ваше телефон..."  name="vh-name">
+              <textarea class="form-input modal__input" name="message" placeholder="Сообщение...">
+
+              </textarea>
+            </main>
+            <footer class="modal__footer">
+              <button class="button lng-button"> <span>Отправить заявку</span> </button>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+  </main>
+  <section class="feedback">
+    <div class="container">
+      <div class="feedback-modal feedback-modal--section">
+
+        <div class="feedback-modal__content">
+          <div class="feedback-modal__body feedback-modal__body--sec">
+            <div class="feedback-modal__title lng-feedback-sec__title">Есть дополнительные вопросы?</div>
+            <div class="feedback-modal__text lng-feedback-sec__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+            <div class="feedback-modal__form">
+              <input name="lng-name-1" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+              <input name="lng-tel-1" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+            </div>
+            <button
+              class="button feedback-modal__input
+          feedback-modal__input--btn lng-send-1"
+            >
+              Отправить
+            </button>
+
+          </div>
+        </div>
+        <div class="feedback-modal__img feedback-modal__img--sec">
+          <img  src="./img/question.jpg"/>
+        </div>
+      </div>
+    </div></section>
+  @include('partials/ourDeal.html')
+  @include('partials/footer.html')
+  <!-- @include('html/h1.html') пример include -->
+</div>
 </body>
 
 </html>
+

@@ -8,6 +8,9 @@
 
 .deal-slider{
   padding: 50px 0;
+  @include media-breakpoint-down(md) {
+    padding: 0 0 20px 0;
+  }
 }
 //.deal-content{
 //  padding: 0 0 0 30px;

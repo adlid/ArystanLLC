@@ -109,9 +109,7 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
-.yellow {
-  color: var(--title-span-color) !important;
-}
+
 .title {
   position: relative;
   z-index: 5;
@@ -120,6 +118,9 @@ a {
   font-size: 30px;
   line-height: 1.4em;
   padding: 35px 0;
+  & span {
+    color: var(--title-span-color);
+  }
 
   &::after {
     position: absolute;
@@ -135,11 +136,9 @@ a {
   @include media-breakpoint-down(md) {
     font-size: 25px;
   }
+
   @include media-breakpoint-down(sm) {
-    font-size: 18px;
-  }
-  @include media-breakpoint-down(sm) {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 .title-wh {

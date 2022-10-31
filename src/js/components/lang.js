@@ -1,4 +1,3 @@
-const { has } = require("browser-sync");
 
 const langArr = {
   "button-feedback--header" : {
@@ -179,33 +178,26 @@ const langArr = {
 }
 console.log("ssssdfsdfsd")
 
-const select = document.querySelector('select')
+//const select = document.querySelector('select')
 const allLang = ['en', 'ru']
-select.addEventListener('change', changeUrlLanguage);
-// const rr = document.querySelector('.change-r')
+// select.addEventListener('change', changeUrlLanguage);
+const rr = document.querySelector('.change-r')
 
-// rr.addEventListener('click',change)
+rr.addEventListener('click',change)
 
-// function change(){
-//   console.log("click")
-//   console.log(rr.getAttribute('data-lang'))
-//   if(rr.getAttribute('data-lang') === "ru"){
-//     rr.setAttribute("data-lang", "en")
-//   }else if(rr.getAttribute('data-lang') === "en"){
-//     rr.setAttribute("data-lang", "ru")
-//   }
-//   let lang = rr.getAttribute('data-lang');
-//   console.log(lang)
-//   location.href = window.location.pathname + "#" + lang;
-//   debugger
-//   location.reload();
+function change(){
+  console.log("click")
+  if(rr.getAttribute('data-lang') === "ru"){
+    rr.setAttribute("data-lang", "en")
+  }else if(rr.getAttribute('data-lang') === "en"){
+    rr.setAttribute("data-lang", "ru")
+  }
+  let lang = rr.getAttribute('data-lang');
 
-// }
-function changeUrlLanguage(){
-
-  let lang = select.value;
   location.href = window.location.pathname + "#" + lang;
+
   location.reload();
+
 }
 
 
@@ -216,8 +208,9 @@ function changeLanguage (){
     location.href = window.location.pathname + "#en";
     location.reload();
   }
-  select.value = hash
-  rr.innerHTML = hash
+
+  rr.innerHTML = hash.toUpperCase()
+  rr.setAttribute("data-lang", hash)
   for(let key in langArr){
     let elem = document.querySelector('.lng-'+key)
     let imput = document.getElementsByName('lng-'+key)
@@ -232,3 +225,4 @@ function changeLanguage (){
   }
 }
 changeLanguage();
+
