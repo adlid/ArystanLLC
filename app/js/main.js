@@ -447,6 +447,10 @@ var langArr = {
   "footer-comp": {
     "ru": "ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг. Мы поможем вам добиться успеха.",
     "en": "ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of professionals in the field of consulting services. We will help you succeed."
+  },
+  "top-page__text-2": {
+    "ru": "Профессиональный подход нашей команды к решению поставленных задач гарантирует нашим партнерам реальную пользу",
+    "en": "The professional approach of our team to solving the tasks set guarantees our partners real benefits"
   }
 };
 var allLang = ['en', 'ru'];
