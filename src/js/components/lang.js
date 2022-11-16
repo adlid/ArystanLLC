@@ -174,18 +174,15 @@ const langArr = {
     "ru":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium omnis, error, dolore, accusamus deleniti assumenda corporis a ad distinctio eius quisquam sint",
     "en":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium omnis, error, dolore, accusamus deleniti assumenda corporis a ad distinctio eius quisquam sint"
   },
-  "" : {
-    "ru":"",
-    "en":""
+  "footer-comp" : {
+    "ru":"ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг. Мы поможем вам добиться успеха.",
+    "en":"ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of professionals in the field of consulting services. We will help you succeed."
   },
 
 }
-console.log("ssssdfsdfsd")
-console.log("cca036")
 
-//const select = document.querySelector('select')
+
 const allLang = ['en', 'ru']
-// select.addEventListener('change', changeUrlLanguage);
 const rr = document.querySelector('.change-r')
 
 rr.addEventListener('click',change)

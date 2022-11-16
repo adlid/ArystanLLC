@@ -1,5 +1,5 @@
 :root {
-  --font-family: "PT Sans";
+  --font-family: "Lora", serif;
   --home-bg-color: #ffffff;
   --menu-bg-color: #cbcbc2;
   --silde-btn-border: #808080;
@@ -3197,6 +3197,7 @@ html {
 body,
 html {
   height: 100%;
+  font-family: "Lora", serif !important;
 }
 
 *,
@@ -10166,6 +10167,7 @@ button.swiper-pagination-bullet {
 
 .about_content__text {
   margin-bottom: 20px;
+  font-size: 17px;
 }
 .about_content__textspan {
   color: #228dcb;
@@ -20544,11 +20546,6 @@ figure.effect-dexter:hover p {
     padding-top: 100px;
   }
 }
-@media (max-width: 767.98px) {
-  .top-page {
-    height: auto;
-  }
-}
 
 .top-page__container {
   width: 100%;
@@ -20660,6 +20657,7 @@ figure.effect-dexter:hover p {
   text-align: center;
   margin-bottom: 15px;
   font-size: 22px;
+  padding: 0 15px;
 }
 @media (max-width: 991.98px) {
   .top-page__text {
@@ -20673,6 +20671,17 @@ figure.effect-dexter:hover p {
 }
 @media (max-width: 575.98px) {
   .top-page__text {
+    font-size: 18px;
+  }
+}
+.top-page__text p {
+  line-height: 0;
+  word-spacing: 0;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+@media (max-width: 575.98px) {
+  .top-page__text p {
     font-size: 18px;
   }
 }
@@ -20930,7 +20939,7 @@ p {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Light";
+  font-family: "Lora", serif;
 }
 
 a {
@@ -20938,7 +20947,7 @@ a {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "OpenSansCondensed-Light";
+  font-family: "Lora", serif;
   display: inline;
   font-weight: bold;
   padding: 7px;
@@ -20958,7 +20967,7 @@ a {
   line-height: 1.5em;
   word-spacing: 0.5em;
   letter-spacing: 0.1em;
-  font-family: "Patua One";
+  font-family: "Lora", serif;
 }
 
 .centre-text {
@@ -21015,7 +21024,7 @@ a {
 .modal-title {
   color: #d68924;
   text-transform: uppercase;
-  font-family: oswald, sans-serif;
+  font-family: "Lora", serif;
   font-weight: 400;
   display: block;
   width: 100%;
