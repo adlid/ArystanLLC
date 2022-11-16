@@ -18,79 +18,72 @@
 </head>
 
 <body class="page__body">
-  <div class="site-container">
-    <header class="header">
+<div class="site-container">
+  <header class="header">
 
   <div class="top-line">
     <div class="top-line__top">
+
       <div class="top-line__item top-line__item--left">
         <div class="language">
           <div class="change-r" data-lang="ru">
             RU
           </div>
-          <select id="lang">
-            <option value="ru">
-              RU
-            </option>
-            <option value="en">
-              EN
-            </option>
-          </select>
+
         </div>
       </div>
-      <div class=" top-line__item top-line__item--center">
+      <div class=" top-line__item top-line__item--center logo-desc">
         <a href="#" class="logo">
           <span class="logo__img-wrapper">
+            <img src="../img/logo-trsans.png">
           </span>
-          <span class="logo__img-text">
-            ARYSTANLLC
-          </span>
+
         </a>
       </div>
       <div class="top-line__item top-line__item--right">
+
         <button
 
-        data-graph-path="modal"
-        class="button button-feedback btn-reset  button-feedback--header lng-button-feedback--header">
+          data-graph-path="modal"
+          class="button button-feedback btn-reset  button-feedback--header lng-button-feedback--header">
           Связаться
         </button>
       </div>
 
-      <div class="menu-button-container">
-        <div class="menu-button">
-          <input type="checkbox" id="ham-menu">
-          <label for="ham-menu">
-            <div class="hide-des">
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-              <span class="menu-line"></span>
-            </div>
-          </label>
-          <div class="full-page-green"></div>
-          <div class="ham-menu">
-            <ul class="centre-text bold-text">
-              <li> <a data-scroll href="#top-page">
-                <span  class="lng-top-page-link" >Главная </spa>
+        <div class="menu-button-container">
 
-                </a> </li>
-              <li > <a class="lng-about-link" data-scroll href="#about"> О нас </a></li>
-              <li> <a class="lng-work-link" data-scroll href="#work"> Наши услуги </a></li>
-              <li> <a class="lng-deal-link" data-scroll href="#deal"> Наши работы </a></li>
-              <li> <a class="lng-footer-link" data-scroll href="#footer"> Контакты </a></li>
-            </ul>
+          <div class="menu-button">
+            <input type="checkbox" id="ham-menu">
+            <label for="ham-menu">
+              <div class="hide-des">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+              </div>
+            </label>
+            <div class="full-page-green"></div>
+            <div class="ham-menu">
+              <ul class="centre-text bold-text">
+                <li> <a data-scroll href="#top-page"><span  class="lng-top-page-link" >Главная </spa></a> </li>
+                <li> <a class="lng-about-link" data-scroll href="#about"> О нас </a></li>
+                <li> <a class="lng-work-link" data-scroll href="#work"> Наши услуги </a></li>
+                <li> <a class="lng-deal-link" data-scroll href="#deal"> Наши работы </a></li>
+                <li> <a class="lng-footer-link" data-scroll href="#footer"> Контакты </a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+
     </div>
     <div class="top-line__bottom">
 
       <ul class="top-line__menu">
         <li class="menu-item">
           <a data-scroll class="menu-item__link lng-top" href="#">
-                Главная
+            Главная
           </a>
         </li>
         <li class="menu-item">
@@ -120,105 +113,109 @@
 
 </header>
 
-    <main class="main">
-      <div class="top-page" id="top-page">
-        <div class="top-page__container">
-          <div class="top-page__bg-wrapper">
-            <img class="top-page__bg" src="./img/consultation-bg.png"/>
+  <main class="main">
+    <div class="top-page" id="top-page">
+      <div class="top-page__container">
+        <div class="top-page__bg-wrapper">
+          <img class="top-page__bg" src="./img/consultation-bg.png"/>
+        </div>
+
+        <div class="top-page__content">
+          <div class="top-page__text ">
+            <span class="lng-top-page__text-1"> Команда </span> <span class="text--orange lng-text--orange"> профессионалов</span> <span class="lng-top-page__text">в сфере консалтинговых услуг.
+                Мы поможем вам добиться успеха. </span>
           </div>
 
-          <div class="top-page__content">
-            <div class="top-page__text ">
-             <span class="lng-top-page__text-1"> Команда </span> <span class="text--orange lng-text--orange"> профессионалов</span> <span class="lng-top-page__text">в сфере консалтинговых услуг.
-                Ежегодно мы выполняем 60 проектов для наших
-                клиентов и партнеров в по всему миру. </span>
-            </div>
-
-            <button
+          <button
             class="button button-feedback lng-button-feedback btn-reset "
             data-graph-path="modal">
             Подробнее
           </button>
 
-          </div>
         </div>
       </div>
+    </div>
 
-      <div class="graph-modal">
-        <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
-          <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
-          <div class="graph-modal__content">
+    <div class="graph-modal">
+      <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+        <button class="btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
 
-            <form>
-              <div class="feedback-modal">
-                <div class="feedback-modal__content">
-                  <div class="feedback-modal__body">
-                    <div class="feedback-modal__title lng-feedback-modal__title">Есть дополнительные вопросы?</div>
-                    <div class="feedback-modal__text lng-feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
-                    <div class="feedback-modal__form">
-                      <input  name="lng-name" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-                      <input  name="lng-tel" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
-                    </div>
-                    <button
-                      class="button feedback-modal__input
-                      feedback-modal__input--btn lng-send"
-                      >
-                      Отправить
-                      </button>
+          <form method="POST" action="./mail.php">
+            <div class="feedback-modal">
+              <div class="feedback-modal__content">
+                <div class="feedback-modal__body">
+                  <div class="feedback-modal__title lng-feedback-modal__title">Есть дополнительные вопросы?</div>
+                  <div class="feedback-modal__text lng-feedback-modal__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+                  <div class="feedback-modal__form">
+                    <input  name="lng-name" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+                    <input  name="lng-tel" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
                   </div>
-                </div>
-                <div class="feedback-modal__img">
-                  <img  src="./img/question.jpg"/>
-                </div>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about_wrapper">
-            <h2 class="title title--bl">
-
-             <span class="lng-about__title"> Группа компаний </span> <span class="yellow title--color"> ARYSTAN LLC </span>
-
-            </h2>
-            <div class="about__content">
-              <div class="about_content__block">
-
-                <!-- <h4  class="about_content__title--sm lng-about_content__title">
-                    <span >
-                      Более 10 лет опыта работы в сфере консалтинга
-                    </span>
-                </h4> -->
-                <div class="about_content__text lng-about_content__text">
-
-                      ARYSTAN LLC — это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы с ней.
-
-                  <br>
+                  <button
+                    class="button feedback-modal__input
+                      feedback-modal__input--btn lng-send"
+                  >
+                    Отправить
+                  </button>
                 </div>
               </div>
-              <div class="about_content__img">
-                <img src="./img/8294.jpg"/>
+              <div class="feedback-modal__img">
+                <img  src="./img/question.jpg"/>
               </div>
             </div>
+          </form>
 
-          </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section id="work" class="work">
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about_wrapper">
+          <h2 class="title title--bl">
+
+            <span class="lng-about__title"> Группа компаний </span> <span class="yellow title--color"> ARYSTAN LLC </span>
+
+          </h2>
+          <div class="about__content">
+            <div class="about_content__block">
+
+              <!-- <h4  class="about_content__title--sm lng-about_content__title">
+                  <span >
+                    Более 10 лет опыта работы в сфере консалтинга
+                  </span>
+              </h4> -->
+              <div class="about_content__text lng-about_content__text">
+
+                ARYSTAN LLC — это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы с ней.
+
+                <br>
+              </div>
+              <button
+                class="button button-feedback lng-button-feedback-2 btn-reset "
+                data-graph-path="modal">
+                Подробнее
+              </button>
+            </div>
+            <div class="about_content__img">
+              <img src="./img/8294.jpg"/>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
   <div class="container">
     <div class="work_wrapper">
 
       <h2 class="title work-title">
         <span class="lng-title-work-1"> Наши Превосходные </span> <span class="lng-title-work-2">Услуги</span>
       </h2>
-     <!-- <h4 class="work-title__text">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo at fugiat neque, nesciunt, ratione iure, tempora enim laboriosam reprehenderit quo exercitationem sint blanditiis a iusto est ipsam perspiciatis quae?
-Magni magnam at ipsa, totam consequatur    </h4>-->
+      <!-- <h4 class="work-title__text">
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo at fugiat neque, nesciunt, ratione iure, tempora enim laboriosam reprehenderit quo exercitationem sint blanditiis a iusto est ipsam perspiciatis quae?
+ Magni magnam at ipsa, totam consequatur    </h4>-->
       <div class="work-content">
         <div data-aos="zoom-in"  data-aos-delay="50"  data-aos-delay="50" data-aos-duration="1000" data-aos-offset="200" class="work-items">
           <div class="work-icon">
@@ -301,7 +298,7 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
   </div>
 </section>
 
-      <section class="numbers">
+    <section class="numbers">
   <div class="container">
     <div class="numbers-wrapper">
       <h2 class="title numbers-title">
@@ -310,7 +307,7 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
       <div class="numbers-content">
         <div class="numbers-item">
           <div class="numbers-item__title lng-number-title">
-             Более 1 года
+            Более 1 года
           </div>
           <div class="numbers-text lng-number-text-1">
             Гарантия на уникальность
@@ -321,7 +318,7 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
             10+
           </div>
           <div class="numbers-text lng-number-text-2">
-             Успешных консультаций
+            Успешных консультаций
           </div>
         </div>
         <div class="numbers-item">
@@ -338,162 +335,154 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
   </div>
 </section>
 
-      <!-- <div class="modal micromodal-slide graph-modal ">
-        <div class="modal_container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-request">
-          <button class="modal-close btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
-          <div class="modal-wrapper graph-modal__content">
-           <h2 class="modal-title lng-modal-title">Оставить заявку </h2>
-           <form action="#">
-              <main class="modal-content">
-                <input class="form-input modal__input" type=""placeholder="Ваше имя..."  name="vh-name">
-                <input class="form-input modal__input" type=""placeholder="Ваше телефон..."  name="vh-name">
-                <textarea class="form-input modal__input" name="message" placeholder="Сообщение...">
+    <!-- <div class="modal micromodal-slide graph-modal ">
+      <div class="modal_container graph-modal__container" role="dialog" aria-modal="true" data-graph-target="send-request">
+        <button class="modal-close btn-reset graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="modal-wrapper graph-modal__content">
+         <h2 class="modal-title lng-modal-title">Оставить заявку </h2>
+         <form action="#">
+            <main class="modal-content">
+              <input class="form-input modal__input" type=""placeholder="Ваше имя..."  name="vh-name">
+              <input class="form-input modal__input" type=""placeholder="Ваше телефон..."  name="vh-name">
+              <textarea class="form-input modal__input" name="message" placeholder="Сообщение...">
 
-                </textarea>
-              </main>
-              <footer class="modal__footer">
-                <button class="button lng-button"> <span>Отправить заявку</span> </button>
-              </footer>
-            </form>
-          </div>
+              </textarea>
+            </main>
+            <footer class="modal__footer">
+              <button class="button lng-button"> <span>Отправить заявку</span> </button>
+            </footer>
+          </form>
         </div>
-      </div> -->
+      </div>
+    </div> -->
 
-    </main>
-    <section class="feedback">
+  </main>
+  <section class="feedback">
     <div class="container">
-    <div class="feedback-modal feedback-modal--section">
+      <div class="feedback-modal feedback-modal--section">
 
-      <div class="feedback-modal__content">
-        <div class="feedback-modal__body feedback-modal__body--sec">
-          <div class="feedback-modal__title lng-feedback-sec__title">Есть дополнительные вопросы?</div>
-          <div class="feedback-modal__text lng-feedback-sec__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
-          <div class="feedback-modal__form">
-            <input name="lng-name-1" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
-            <input name="lng-tel-1" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
-          </div>
-          <button
-          class="button feedback-modal__input
+        <div class="feedback-modal__content">
+          <div class="feedback-modal__body feedback-modal__body--sec">
+            <div class="feedback-modal__title lng-feedback-sec__title">Есть дополнительные вопросы?</div>
+            <div class="feedback-modal__text lng-feedback-sec__text">Оставьте свои контакты, мы перезвоним и проконсультируем вас</div>
+            <div class="feedback-modal__form">
+              <input name="lng-name-1" placeholder="Ваше имя" class="feedback-modal__input" type="text"/>
+              <input name="lng-tel-1" placeholder="Ваш телефон" class="feedback-modal__input" type="tel"/>
+            </div>
+            <button
+              class="button feedback-modal__input
           feedback-modal__input--btn lng-send-1"
-          >
-          Отправить
-          </button>
+            >
+              Отправить
+            </button>
 
+          </div>
+        </div>
+        <div class="feedback-modal__img feedback-modal__img--sec">
+          <img  src="./img/question.jpg"/>
         </div>
       </div>
-      <div class="feedback-modal__img feedback-modal__img--sec">
-        <img  src="./img/question.jpg"/>
-      </div>
-    </div>
-  </div></section>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
-  <section id="deal" class="deal">
-    <div class="container">
-      <div class="deal-wrapper">
-        <h2 class="title deal-title">
-           <span class="lng-title-deals"> Наши </span> <span class="yellow lng-title-dealf">Работы</span>
-        </h2>
-        <div class="deal-content">
+    </div></section>
 
-          <div class="deal-slider">
-            <div class="deal-slider__wrapper swiper-wrapper">
-              <div class="deal-slider__slide swiper-slide">
-                <div class="slider-content__order"> <span> 01 </span> </div>
-                <figure class="effect-dexter">
+<section id="deal" class="deal">
+  <div class="container">
+    <div class="deal-wrapper">
+      <h2 class="title deal-title">
+        <span class="lng-title-deals"> Наши </span> <span class="yellow lng-title-dealf">Работы</span>
+      </h2>
+      <div class="deal-content">
 
-                  <img
-                    src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
-                    alt="img12"
-                  />
+        <div class="deal-slider">
+          <div class="deal-slider__wrapper swiper-wrapper">
+            <div class="deal-slider__slide swiper-slide">
+              <div class="slider-content__order"> <span> 01 </span> </div>
+              <figure class="effect-dexter">
 
-                  <figcaption>
-                    <h2>Strange
-                      <span>Dexter</span>
-                    </h2>
-                    <p>
-                      Dexter had his own strange way.
-                      You could watch him training ants.
-                    </p>
-                    <a href="#">
-                      View more
-                    </a>
-                  </figcaption>
+                <img
+                  src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
+                  alt="img12"
+                />
 
-                </figure>
-              </div>
-              <div class="deal-slider__slide swiper-slide">
-                <div class="slider-content__order"> <span> 02 </span> </div>
-                <figure class="effect-dexter">
+                <figcaption>
+                  <h2>Strange
+                    <span>Dexter</span>
+                  </h2>
+                  <p>
+                    Dexter had his own strange way.
+                    You could watch him training ants.
+                  </p>
+                  <a href="#">
+                    View more
+                  </a>
+                </figcaption>
 
-                  <img
-                    src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
-                    alt="img12"
-                  />
+              </figure>
+            </div>
+            <div class="deal-slider__slide swiper-slide">
+              <div class="slider-content__order"> <span> 02 </span> </div>
+              <figure class="effect-dexter">
 
-                  <figcaption>
-                    <h2> Strange
-                      <span> Dexter </span>
-                    </h2>
-                    <p>
-                      Dexter had his own strange way.
-                      You could watch him training ants.
-                    </p>
-                    <a
-                      href="#">
-                      View more
-                    </a>
+                <img
+                  src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000"
+                  alt="img12"
+                />
 
-                  </figcaption>
+                <figcaption>
+                  <h2> Strange
+                    <span> Dexter </span>
+                  </h2>
+                  <p>
+                    Dexter had his own strange way.
+                    You could watch him training ants.
+                  </p>
+                  <a
+                    href="#">
+                    View more
+                  </a>
 
-                </figure>
-              </div>
-              <div class="deal-slider__slide swiper-slide">
-                <div class="slider-content__order"> <span> 03 </span> </div>
-                <figure class="effect-dexter">
+                </figcaption>
 
-                  <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
+              </figure>
+            </div>
+            <div class="deal-slider__slide swiper-slide">
+              <div class="slider-content__order"> <span> 03 </span> </div>
+              <figure class="effect-dexter">
 
-                  <figcaption>
-                    <h2>Strange <span>Dexter</span></h2>
-                    <p>Dexter had his own strange way. You could watch him training ants.</p>
-                    <a href="#">View more</a>
-                  </figcaption>
+                <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
 
-                </figure>
-              </div>
-              <div class="deal-slider__slide swiper-slide">
-                <div class="slider-content__order"> <span> 04 </span> </div>
-                <figure class="effect-dexter">
+                <figcaption>
+                  <h2>Strange <span>Dexter</span></h2>
+                  <p>Dexter had his own strange way. You could watch him training ants.</p>
+                  <a href="#">View more</a>
+                </figcaption>
 
-                  <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
+              </figure>
+            </div>
+            <div class="deal-slider__slide swiper-slide">
+              <div class="slider-content__order"> <span> 04 </span> </div>
+              <figure class="effect-dexter">
 
-                  <figcaption>
-                    <h2>Strange <span>Dexter</span></h2>
-                    <p>Dexter had his own strange way. You could watch him training ants.</p>
-                    <a href="#">View more</a>
-                  </figcaption>
+                <img src="https://img.freepik.com/premium-vector/abstract-dynamic-blue-orange-background_67845-1390.jpg?w=2000" alt="img12"/>
 
-                </figure>
-              </div>
+                <figcaption>
+                  <h2>Strange <span>Dexter</span></h2>
+                  <p>Dexter had his own strange way. You could watch him training ants.</p>
+                  <a href="#">View more</a>
+                </figcaption>
 
+              </figure>
             </div>
 
           </div>
 
         </div>
+
       </div>
     </div>
-  </section>
-</body>
-</html>
+  </div>
+</section>
 
-    <footer id="footer" class="footer">
+  <footer id="footer" class="footer">
   <div class="container">
 
     <div class="footer-wrapper">
@@ -559,7 +548,7 @@ Magni magnam at ipsa, totam consequatur    </h4>-->
   </div>
 </footer>
 
-  </div>
+</div>
 </body>
 
 </html>

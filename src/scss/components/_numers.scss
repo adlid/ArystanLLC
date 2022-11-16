@@ -4,6 +4,7 @@
   padding-bottom: 70px;
   position: relative;
   margin-bottom: 200px;
+  display: none;
   @include media-breakpoint-down(md) {
     display: none;
   }

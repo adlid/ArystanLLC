@@ -166,7 +166,10 @@
     padding: 10px 0 3px 5px;
   }
 }
-
+.top-line__top--fixed .menu-button-container .menu-button{
+  top: -6px;
+  height: 70px;
+}
 .logo__img-wrapper {
 
   display: block;

@@ -30,10 +30,14 @@ const langArr = {
   },
 
   "top-page__text" : {
-    "ru":"в сфере консалтинговых услуг. Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров в по всему миру.",
-    "en":"in the field of consulting services. Every year we carry out 60 projects for our clients and partners all over the world."
+    "ru":"в сфере консалтинговых услуг. Мы поможем вам добиться успеха.",
+    "en":"in the field of consulting services. We will help you succeed."
   },
   "button-feedback" : {
+    "ru":"Подробнее",
+    "en":"More"
+  },
+  "button-feedback-2" : {
     "ru":"Подробнее",
     "en":"More"
   },
@@ -54,8 +58,8 @@ const langArr = {
     "en":"Leave your contacts, we will call you back and advise you"
   },
   "top-page__text-1" : {
-    "ru":"Команда",
-    "en":"A team of"
+    "ru":"ARYSTAN LLC – это скорость, качество и гарантия результата. Команда",
+    "en":"ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of"
   },
   "about__title" : {
     "ru":"Группа компаний",
@@ -66,8 +70,8 @@ const langArr = {
     "en":""
   },
   "about_content__text" : {
-    "ru":" ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг.Ежегодно мы выполняем 60 проектов для наших клиентов и партнеров по всему миру. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.",
-    "en":" ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of professionals in the field of consulting services.Every year we carry out 60 projects for our clients and partners around the world. For the entire period of the companies, we have created the largest database of industry specialists who help to develop feasibility studies, FEO and conduct financial analysis of enterprises. In our work, we use only up-to-date market information and use modern tools to work with it."
+    "ru":" ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.",
+    "en":" ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of professionals in the field of consulting services. For the entire period of the companies, we have created the largest database of industry specialists who help to develop feasibility studies, FEO and conduct financial analysis of enterprises. In our work, we use only up-to-date market information and use modern tools to work with it."
   },
   "service-finance" : {
     "ru":"Финансовые услуги",
@@ -177,6 +181,7 @@ const langArr = {
 
 }
 console.log("ssssdfsdfsd")
+console.log("cca036")
 
 //const select = document.querySelector('select')
 const allLang = ['en', 'ru']

@@ -10,6 +10,11 @@
 .about_content__block {
   padding: 0 20px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @include media-breakpoint-down(sm) {
     width: 100%;
   }
@@ -43,6 +48,7 @@
 }
 
 .about_content__text {
+  margin-bottom: 20px;
   &span {
     color: #228dcb;
     font-weight: 700;
@@ -219,7 +225,7 @@
 .title--bl {
   position: relative;
   z-index: -4;
-
+  padding: 35px 0 0 0;
   &::before {
     content: "";
     position: absolute;
@@ -240,7 +246,8 @@
     z-index: 0;
   }
   &:after{
-    background-color: #f4bd33;
+    background-color: #bf9840;
+    bottom: -10px;
   }
 }
 .title--bl span{

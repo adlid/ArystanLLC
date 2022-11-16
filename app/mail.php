@@ -1,4 +1,4 @@
-<?php
+ <?php
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -9,7 +9,9 @@ $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
+$number = $_POST["lng-tel"]
+$name = $_POST["lng-name"]
+$title = "Заголовок письма" + $name ;
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
