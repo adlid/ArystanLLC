@@ -14,6 +14,9 @@
   & span {
     color: var(--site-orange-color);
   }
+  &:after{
+    background: #1a7b9f;
+  }
 }
 
 .work-content {

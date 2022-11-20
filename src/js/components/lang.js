@@ -58,8 +58,8 @@ const langArr = {
     "en":"Leave your contacts, we will call you back and advise you"
   },
   "top-page__text-1" : {
-    "ru":"ARYSTAN LLC – это скорость, качество и гарантия результата. Команда",
-    "en":"ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of"
+    "ru":"Консалтинговая компания Arystan LLC - это комплексный оператор бизнес услуг. Мы создаем удобный сервис для предпринимателей.",
+    "en":"Arystan LLC consulting Company is a comprehensive operator of business services. We create a convenient service for entrepreneurs."
   },
   "about__title" : {
     "ru":"Группа компаний",
@@ -70,8 +70,8 @@ const langArr = {
     "en":""
   },
   "about_content__text" : {
-    "ru":" ARYSTAN LLC – это скорость, качество и гарантия результата. Команда профессионалов в сфере консалтинговых услуг. За весь период компаний мы создали крупнейшую базу отраслевых специалистов, которые помогают разрабатывать ТЭО, ФЭО и проводить финансовый анализ предприятий. В своей работе мы используем только актуальную рыночную информацию и применяем современные инструменты для работы  с ней.",
-    "en":" ARYSTAN LLC – this is speed, quality and a guarantee of results. A team of professionals in the field of consulting services. For the entire period of the companies, we have created the largest database of industry specialists who help to develop feasibility studies, FEO and conduct financial analysis of enterprises. In our work, we use only up-to-date market information and use modern tools to work with it."
+    "ru":"Arystan LLC - это скорость, качество и гарантия результата. Здесь вы можете получить практически любые услуги для Вашего бизнеса на выгодных условиях. Наша команда готова оказать профессиональную прддержку во всем от бухгалтерии до маркетинга. Мы специализируемся на консалтинговых услугах и аутсорсинге юридической поддержки, маркетинга, видео-продакшна.",
+    "en":"Arystan LLC is about speed, quality and a guarantee of results. Here you can get almost any services for your business on favorable terms. Our team is ready to provide professional support in everything from accounting to marketing. We specialize in consulting services and outsourcing of legal support, marketing, video production."
   },
   "service-finance" : {
     "ru":"Финансовые услуги",

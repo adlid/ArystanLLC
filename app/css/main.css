@@ -3327,7 +3327,7 @@ a {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   left: 50%;
-  background-color: var(--title-span-color);
+  background-color: var(--site-orange-color);
 }
 @media (max-width: 767.98px) {
   .title {
@@ -10133,7 +10133,10 @@ button.swiper-pagination-bullet {
 
 .about_content__img {
   width: 50%;
-  padding: 0 20px;
+  padding: 40px;
+}
+.about_content__img img {
+  border-radius: 15px;
 }
 @media (max-width: 575.98px) {
   .about_content__img {
@@ -16896,6 +16899,9 @@ button.swiper-pagination-bullet {
 .work-title span {
   color: var(--site-orange-color);
 }
+.work-title:after {
+  background: #1a7b9f;
+}
 
 .work-content {
   display: -webkit-box;
@@ -20510,7 +20516,7 @@ figure.effect-dexter:hover p {
 }
 
 .feedback {
-  padding: 0;
+  padding: 60px 0 0 0;
 }
 @media (max-width: 767.98px) {
   .feedback {
@@ -20605,17 +20611,6 @@ figure.effect-dexter:hover p {
     padding: 0 15px;
   }
 }
-.top-page__content::before {
-  content: "";
-  background-image: url(../img/yellow-line-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  top: 0;
-  right: 0;
-  width: 400px;
-  height: 150px;
-  position: absolute;
-}
 @media (max-width: 767.98px) {
   .top-page__content::before {
     display: none;
@@ -20626,17 +20621,6 @@ figure.effect-dexter:hover p {
     width: 270px;
     height: 120px;
   }
-}
-.top-page__content::after {
-  content: "";
-  background-image: url(../img/volna.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  bottom: 0;
-  left: 0;
-  width: 400px;
-  height: 150px;
-  position: absolute;
 }
 @media (max-width: 991.98px) {
   .top-page__content::after {
@@ -20691,8 +20675,11 @@ figure.effect-dexter:hover p {
 }
 
 .top-page__bg-wrapper {
-  height: auto;
   width: 50%;
+  height: 70%;
+  background: -o-linear-gradient(76deg, #020024 0%, #176785 0%, #158db3 92%, #00d4ff 100%);
+  background: linear-gradient(14deg, #020024 0%, #176785 0%, #158db3 92%, #00d4ff 100%);
+  border-radius: 69% 31% 100% 0%/60% 89% 11% 40%;
 }
 @media (max-width: 575.98px) {
   .top-page__bg-wrapper {
@@ -20706,13 +20693,15 @@ figure.effect-dexter:hover p {
 }
 
 .top-page__bg {
-  width: 100%;
+  width: 70%;
+  height: 80%;
+  border-radius: 72% 28% 100% 0%/32% 79% 21% 68%;
 }
 
 .button {
   width: 200px;
   display: inline-block;
-  background-color: #1a7b9f;
+  background-color: #bb9436;
   color: #fff;
   font-size: 13px;
   letter-spacing: 2px;

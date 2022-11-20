@@ -1,3 +1,4 @@
+
 .graph-modal__container {
   width: 700px;
 }
@@ -61,7 +62,7 @@
   }
 }
 .feedback {
-  padding: 0;
+  padding: 60px 0 0 0;
   @include media-breakpoint-down(md) {
    padding: 10px;
   }

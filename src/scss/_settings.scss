@@ -131,7 +131,7 @@ a {
     bottom: 25px;
     transform: translateX(-50%);
     left: 50%;
-    background-color: var(--title-span-color);
+    background-color: var(--site-orange-color);
   }
 
   @include media-breakpoint-down(md) {

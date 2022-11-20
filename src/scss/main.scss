@@ -52,18 +52,18 @@
     width: 100%;
     padding: 0 15px;
   }
-  &::before {
-    content: "";
-    background-image: url(../img/yellow-line-1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    top: 0;
-    right: 0;
-    width: 400px;
-    height: 150px;
-    position: absolute;
-  }
+  //&::before {
+  //  content: "";
+  //  background-image: url(../img/yellow-line-1.png);
+  //  background-position: center;
+  //  background-repeat: no-repeat;
+  //
+  //  top: 0;
+  //  right: 0;
+  //  width: 400px;
+  //  height: 150px;
+  //  position: absolute;
+  //}
   @include media-breakpoint-down(md) {
     &::before {
       display: none;
@@ -75,18 +75,18 @@
       height: 120px;
     }
   }
-  &::after {
-    content: "";
-    background-image: url(../img/volna.png);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    bottom: 0;
-    left: 0;
-    width: 400px;
-    height: 150px;
-    position: absolute;
-  }
+  //&::after {
+  //  content: "";
+  //  background-image: url(../img/volna.png);
+  //  background-position: center;
+  //  background-repeat: no-repeat;
+  //
+  //  bottom: 0;
+  //  left: 0;
+  //  width: 400px;
+  //  height: 150px;
+  //  position: absolute;
+  //}
   @include media-breakpoint-down(lg) {
     &::after {
       width: 200px;
@@ -132,8 +132,10 @@ color: #bf9840;
 }
 
 .top-page__bg-wrapper {
-height: auto;
-width: 50%;
+  width: 50%;
+  height: 70%;
+  background: linear-gradient(14deg, rgba(2,0,36,1) 0%, rgba(23,103,133,1) 0%, rgba(21,141,179,1) 92%, rgba(0,212,255,1) 100%);
+  border-radius: 69% 31% 100% 0% / 60% 89% 11% 40%  ;
 @include media-breakpoint-down(sm) {
 margin-bottom: 20px;
 }
@@ -147,13 +149,15 @@ width: 100%;
 //}
 }
 .top-page__bg {
-width: 100%;
+width: 70%;
+  height: 80%;
+  border-radius: 72% 28% 100% 0% / 32% 79% 21% 68%  ;
 }
 
 .button {
 width: 200px;
 display: inline-block;
-background-color: #1a7b9f;
+background-color: #bb9436;
 color: #fff;
 font-size: 13px;
 letter-spacing: 2px;
